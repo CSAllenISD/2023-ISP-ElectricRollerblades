@@ -1,3 +1,21 @@
 body {
-    background-color: lightblue;    
+    background-color: lightblue;
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.page links{
+    text-align: center;
+}
+
+.back {
+    text-align: left;
+}
+
+.paragraph {
+    text-indent: 40px
 }
