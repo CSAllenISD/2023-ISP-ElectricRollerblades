@@ -29,6 +29,6 @@ TimothyA112 Product Manager
 
 	https://www.codermerlin.com/users/timothy-andresen/Digital%20Portfolio/CS-II/Projects/ISP/index.html
 
-##Git control scheme
+## Git control scheme
 
 This repository has six distinct branches with different functionalities each. The main branch is the information branch where we update the project, but it houses none of the development materials. The dev branch is for the prototyped code (new feature or hot fixes are put into temporary branches). The Merge branch is used to integrate the dev and functionality branches together, before being flagged and pushed into the stable branch, which houses production code. CAD houses all of our physical, hardware developments and analysis houses all of our QA processes.
