@@ -30,3 +30,7 @@ TimothyA112 Product Manager
 	https://www.codermerlin.com/users/timothy-andresen/Digital%20Portfolio/CS-II/Projects/ISP/index.html
 <br>
 This is the branch for our cad stress analysis, where we are able to analyze our models and designs before production in terms of stability and sturdiness to save on cost of producting more versions than needed. 
+Constraints of Analysis: 
+the design has to support weight up to 100 lbs per side downwardly. 
+the design has to support weight up to 50 lbs per side when side loaded at wheel mount.
+the design has to support weight up to 50 lbs per side when side loaded at suspensioning system.
