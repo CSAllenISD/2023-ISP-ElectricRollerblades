@@ -28,3 +28,5 @@ TimothyA112 Product Manager
  	<br>
 	
 	https://www.codermerlin.com/users/timothy-andresen/Digital%20Portfolio/CS-II/Projects/ISP/index.html
+<br>
+This is the branch for our cad stress analysis, where we are able to analyze our models and designs before production in terms of stability and sturdiness to save on cost of producting more versions than needed. 
