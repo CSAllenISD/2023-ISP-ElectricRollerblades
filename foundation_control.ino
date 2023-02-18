@@ -1,9 +1,9 @@
 #include <Servo.h>
 
-const uint8_t VescOutputPin = 5;
+const uint8_t VescOutputPin = 5; //make sure to plug in power to the pwm as well as the signal to p5
 
-const uint8_t PotentiometerPin = A0;
-const uint8_t PotentiometerPinRear = A1;
+const uint8_t PotentiometerPin = A0; //make sure to plug in power as well to pots
+const uint8_t PotentiometerPinRear = A1; //pot = bend sensor
 
 Servo esc;
 
@@ -18,14 +18,15 @@ int number = 0;
 int diff = 0;
 void loop() {
   diff = analogRead(PotentiometerPin) - analogRead(PotentiometerPinRear);
-  Serial.print(map(analogRead(PotentiometerPin), 655 , 881, 1000, 2000));
+  //for testing, make sure to change actual vales
+  Serial.print(map(analogRead(PotentiometerPin), 655 , 881, 1000, 2000)); // (potlowerlimit, potupperlimit, outputlowerlimit, outputupperlimit)
   Serial.print("  ");
   Serial.print(analogRead(PotentiometerPin));
   Serial.print("  ");
   Serial.print(diff);
   Serial.print("  ");
   Serial.println(map(diff, -226, 226, 1000, 2000));
-  if 
+  //actual esc stuff 
   esc.writeMicroseconds(map(analogRead(PotentiometerPin), 655 , 881, 1000, 2000));
 
 }
