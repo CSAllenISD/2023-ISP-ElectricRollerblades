@@ -1,4 +1,4 @@
-double kP = 0, kI = 0, kD = 0;
+double kP = 0.84, kI = 0.001, kD = 0.1;
 int cycleTime = 20; //I'm not sure what the cycle time of the ino is
 
 double PID(int setPoint){
@@ -10,7 +10,7 @@ double PID(int setPoint){
     double integral = (integral * 0.9) + (error * kI * cycleTime) * 0.1; //integral calculation
     derivative = kD * (error - oldError) / cycleTime; //derivative, unnecesary but here for completness sake
 
-    double voltage += proportional + integral + derivative; 
+    double voltage = voltage + proportional + integral + derivative; 
 
 
     oldError = error; //update error

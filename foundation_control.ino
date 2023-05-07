@@ -28,6 +28,8 @@ void loop() {
   Serial.print("  ");
   Serial.println(map(diff, -226, 226, 1000, 2000));
   //actual esc stuff 
-  esc.writeMicroseconds(map(analogRead(PotentiometerPin), 655 , 881, 1000, 2000));
+
+  
+  esc.writeMicroseconds(PID(map(analogRead(PotentiometerPin), 655 , 881, 1000, 2000)));
 
 }
